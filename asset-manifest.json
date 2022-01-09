@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/CRUD-Operations-with-Countries-table/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/CRUD-Operations-with-Countries-table/static/js/main.544ea076.chunk.js",
+    "main.js.map": "/CRUD-Operations-with-Countries-table/static/js/main.544ea076.chunk.js.map",
+    "runtime-main.js": "/CRUD-Operations-with-Countries-table/static/js/runtime-main.56ca4a8d.js",
+    "runtime-main.js.map": "/CRUD-Operations-with-Countries-table/static/js/runtime-main.56ca4a8d.js.map",
+    "static/js/2.3ff1c7d2.chunk.js": "/CRUD-Operations-with-Countries-table/static/js/2.3ff1c7d2.chunk.js",
+    "static/js/2.3ff1c7d2.chunk.js.map": "/CRUD-Operations-with-Countries-table/static/js/2.3ff1c7d2.chunk.js.map",
+    "static/js/3.11bff69d.chunk.js": "/CRUD-Operations-with-Countries-table/static/js/3.11bff69d.chunk.js",
+    "static/js/3.11bff69d.chunk.js.map": "/CRUD-Operations-with-Countries-table/static/js/3.11bff69d.chunk.js.map",
+    "index.html": "/CRUD-Operations-with-Countries-table/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/CRUD-Operations-with-Countries-table/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.3ff1c7d2.chunk.js.LICENSE.txt": "/CRUD-Operations-with-Countries-table/static/js/2.3ff1c7d2.chunk.js.LICENSE.txt",
+    "static/media/NotFound.b684e5be.jpg": "/CRUD-Operations-with-Countries-table/static/media/NotFound.b684e5be.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.56ca4a8d.js",
+    "static/js/2.3ff1c7d2.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.544ea076.chunk.js"
+  ]
+}
