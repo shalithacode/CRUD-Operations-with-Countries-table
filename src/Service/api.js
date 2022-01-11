@@ -1,3 +1,4 @@
+/*
 import axios from 'axios';
 
 const countrysUrl = 'http://localhost:3002/countrys';
@@ -19,3 +20,4 @@ export const deleteCountry = async (id) => {
 export const editCountry = async (id, country) => {
     return await axios.put(`${countrysUrl}/${id}`, country)
 }
+*/

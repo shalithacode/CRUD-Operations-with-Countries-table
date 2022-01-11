@@ -1,6 +1,6 @@
 {
   "name": "crud-app",
-  "homepage": "https://shalithacode.github.io/CRUD-Operations-with-Countries-table/",
+  
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,9 +20,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "json-server": "json-server --watch public/db.json --port 3002",
+    "json-server": "json-server --watch src/Database/db.json --host 127.0.0.1 --port 3002",
     "dev": "concurrently \"npm start\" \"npm run json-server\"",
     "build": "react-scripts build",
     "test": "react-scripts test",

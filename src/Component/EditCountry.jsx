@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { FormGroup, FormControl, InputLabel, Input, Button, makeStyles, Typography } from '@material-ui/core';
 import { useHistory, useParams } from 'react-router-dom';
-import { getCountrys, editCountry } from '../Service/api';
+// import { getCountrys, editCountry } from '../Service/api';
 
 const initialValue = {
     name: '',
@@ -32,12 +32,32 @@ const EditCountry = () => {
     }, []);
 
     const loadCountryDetails = async() => {
-        const response = await getCountrys(id);
-        setCountry(response.data);
+          fetch("http://localhost:3002/countrys", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then(function (response) {
+        console.log(response);
+        return response.json();
+      })
+      .then(function (myJson) {
+        //console.log(myJson);
+        setCountry(myJson);
+      });
     }
 
-    const editCountryDetails = async() => {
-        const response = await editCountry(id, country);
+    const editCountryDetails = () => {
+        fetch(`http://localhost:3002/countrys/${id}`, {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(country),
+    }).then(function (response) {
+      console.log(response);
+      return response.json();
+    });
+       
         history.push('/all');
     }
 

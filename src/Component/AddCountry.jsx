@@ -1,6 +1,6 @@
 import react, { useState } from 'react';
 import { FormGroup, FormControl, InputLabel, Input, Button, makeStyles, Typography } from '@material-ui/core';
-import { addCountry } from '../Service/api';
+// import { addCountry } from '../Service/api';
 import { useHistory } from 'react-router-dom';
 
 const initialValue = {
@@ -32,7 +32,16 @@ const AddCountry = () => {
     }
 
     const addCountryDetails = async() => {
-        await addCountry(country);
+
+        fetch("http://localhost:3002/countrys", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(country),
+    }).then(function (response) {
+      console.log(response);
+      return response.json();
+    });
+        
         history.push('./all');
     }
 

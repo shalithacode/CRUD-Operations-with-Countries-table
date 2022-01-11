@@ -1,6 +1,6 @@
 import react, { useState, useEffect } from 'react';
 import { Table, TableHead, TableCell, Paper, TableRow, TableBody, Button, makeStyles } from '@material-ui/core'
-import { getCountrys, deleteCountry } from '../Service/api';
+// import { getCountrys, deleteCountry } from '../Service/api';
 import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
@@ -31,14 +31,44 @@ const AllCountrys = () => {
         getAllCountrys();
     }, []);
 
-    const deleteCountryData = async (id) => {
-        await deleteCountry(id);
+    const deleteCountryData = (id) => {
+
+        fetch(`http://localhost:3002/countrys/${id}`, {
+            method:'DELETE',
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+            },
+          })
+            .then(function (response) {
+              console.log(response);
+              return response.json();
+            })
+            .then(function (myJson) {
+              //console.log(myJson);
+              
+            });
+        
         getAllCountrys();
     }
 
-    const getAllCountrys = async () => {
-        let response = await getCountrys();
-        setCountrys(response.data);
+    const getAllCountrys =  () => {
+
+        fetch("http://localhost:3002/countrys", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then(function (response) {
+        console.log(response);
+        return response.json();
+      })
+      .then(function (myJson) {
+        //console.log(myJson);
+        setCountrys(myJson);
+      });
+        
     }
 
     return (
