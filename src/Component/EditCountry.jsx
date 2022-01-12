@@ -32,7 +32,7 @@ const EditCountry = () => {
     }, []);
 
     const loadCountryDetails = async() => {
-          fetch("http://localhost:3002/countrys", {
+          fetch(`http://localhost:3002/countrys/${id}`, {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",

@@ -5,40 +5,23 @@
       "currency": "Sri Lankan rupee",
       "population": "21.92",
       "flagURL": "https://camo.githubusercontent.com/e7c43c239df67483c0ebefa5b9d1cf78367013a8ebe5fbb6fa1faa89cd52d8e8/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f312f31312f466c61675f6f665f5372695f4c616e6b612e737667",
-      "GDP": "80.71",
-      "id": 1
+      "GDP": "80.710",
+      "id": "1"
     },
     {
       "name": "Australia",
       "currency": "Australian dollar",
-      "population": "25.69",
+      "population": "35.69",
       "flagURL": "https://upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_Australia_%28converted%29.svg",
       "GDP": "1331.0",
-      "id": 2
+      "id": "2"
     },
     {
-      "name": "China",
-      "currency": "Yuan",
-      "population": "1402.0",
-      "flagURL": "https://camo.githubusercontent.com/36b999b8d62e3dad262dec7ba75ef4cad465cec20fc3c75eaab329a6a63bf4ee/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f662f66612f466c61675f6f665f7468655f50656f706c65253237735f52657075626c69635f6f665f4368696e612e737667",
-      "GDP": "14720.0",
-      "id": 3
-    },
-    {
-      "name": "India",
-      "currency": "Indian rupee",
-      "population": "1380.0",
-      "flagURL": "https://camo.githubusercontent.com/e7c43c239df67483c0ebefa5b9d1cf78367013a8ebe5fbb6fa1faa89cd52d8e8/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f312f31312f466c61675f6f665f5372695f4c616e6b612e737667",
-      "GDP": "2623.0",
-      "id": 4
-    },
-    {
-      "name": "Japan",
-      "currency": "Yen",
-      "population": "125.8",
-      "flagURL": "https://camo.githubusercontent.com/6e8a4857fc28447e91917fbc0ed68daf1a3fcef31130b31a3637c1231d023906/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f622f62632f466c61675f6f665f4a6170616e253238626f7264657265642532392e737667",
-      "GDP": "5065.0",
-      "id": 5
+      "name": "USA",
+      "currency": "USD",
+      "population": "329.5",
+      "GDP": "-",
+      "id": "3"
     }
   ]
 }
